@@ -34,14 +34,14 @@ namespace mayur{
     }
 
     //addition method
-    void matrix::operator+(matrix Z){
+    Matrix Matrix::operator+(Matrix Z){
 
         Matrix Y(3,3);
         int i, j;
 
         for(i=0;i<column;i+=1){
             for(j=0;j<row; j+=1){
-                Y.matrix1[i][j] = matrix1[i][j] + Z.matrix1[i][j];
+                Y.matrix[i][j] = matrix[i][j] + Z.matrix[i][j];
             }
         }
     }
@@ -55,7 +55,7 @@ namespace mayur{
 
         for(i=0;i<column;i+=1){
             for(j=0;j<row; j+=1){
-                Y.matrix1[i][j] = matrix[i][j] - Z.matrix[i][j];
+                Y.matrix[i][j] = matrix[i][j] - Z.matrix[i][j];
             }
         }
 
