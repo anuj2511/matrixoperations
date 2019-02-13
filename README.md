@@ -1,2 +1,2 @@
 # matrixoperations
-matrix operations library in c+=
+matrix operations library in c++.
