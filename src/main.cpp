@@ -14,7 +14,7 @@ int main(){
     mayur::Matrix C(3,3);
     C = A + B ;
 
-    C.getMatrix();
+    C.displayMatrix();
     
 
     return 0;
