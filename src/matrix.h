@@ -10,6 +10,7 @@ namespace mayur{
 	
 	public :
 		Matrix(int,int);
+		Matrix();
 		
         void getMatrix();
 		void displayMatrix(); 

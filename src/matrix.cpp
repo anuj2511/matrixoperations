@@ -8,6 +8,10 @@ namespace mayur{
 	    column = j;
     }
 
+    Matrix::Matrix(){
+
+    }
+
     //accept matrix
     void Matrix::getMatrix(){
         int i,j;
@@ -36,7 +40,7 @@ namespace mayur{
     //addition method
     Matrix Matrix::operator+(Matrix Z){
 
-        Matrix Y(3,3);
+        Matrix Y(row, column);
         int i, j;
 
         for(i=0;i<column;i+=1){
@@ -50,7 +54,7 @@ namespace mayur{
 
     Matrix Matrix::operator-(Matrix Z){
 
-        Matrix Y(3,3);
+        Matrix Y(row, column);
         int i, j;
 
         for(i=0;i<column;i+=1){
@@ -64,7 +68,7 @@ namespace mayur{
 
     Matrix Matrix::operator*(Matrix Z){
 
-        Matrix Y(3,3);
+        Matrix Y(row, column);
         int i, j, k;
 
         for(i=0;i<column;i+=1){
