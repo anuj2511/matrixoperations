@@ -10,6 +10,11 @@ int main(){
 
     mayur::Matrix B(3,3);
     B.getMatrix();
+
+    mayur::Matrix C(3,3);
+    C = A + B ;
+
+    C.getMatrix();
     
 
     return 0;
