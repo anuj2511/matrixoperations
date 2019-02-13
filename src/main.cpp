@@ -5,13 +5,13 @@ int main(){
 
     std::cout<<"Entered Main.\n";
 
-    mayur::Matrix A(3,3);
+    mayur::Matrix A(4,4);
     A.getMatrix();
 
-    mayur::Matrix B(3,3);
+    mayur::Matrix B(4,4);
     B.getMatrix();
 
-    mayur::Matrix C(3,3), D(3,3), E(3,3);
+    mayur::Matrix C(4,4), D(4,4), E(4,4);
     
     C = A + B ;
     D = A - B ;
