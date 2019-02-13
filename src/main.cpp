@@ -11,11 +11,15 @@ int main(){
     mayur::Matrix B(3,3);
     B.getMatrix();
 
-    mayur::Matrix C(3,3);
+    mayur::Matrix C(3,3), D(3,3), E(3,3);
+    
     C = A + B ;
+    D = A - B ;
+    E = A * B ;
 
     C.displayMatrix();
+    D.displayMatrix();
+    E.displayMatrix();
     
-
     return 0;
 }
