@@ -44,9 +44,9 @@ namespace mayur{
                 Y.matrix[i][j] = matrix[i][j] + Z.matrix[i][j];
             }
         }
+
+        return Y;
     }
-
-
 
     Matrix Matrix::operator-(Matrix Z){
 
@@ -59,6 +59,7 @@ namespace mayur{
             }
         }
 
+        return Y;
     }
 
     Matrix Matrix::operator*(Matrix Z){
@@ -73,6 +74,8 @@ namespace mayur{
                 }
             }
         }
+
+        return Y;
     }
 
 }
