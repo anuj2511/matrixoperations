@@ -4,20 +4,21 @@
 namespace mayur{
 
     class Matrix{
-     	private :
+     	
+	protected :
 		float matrix[10][10];
 		int row, column;
 	
 	public :
-		Matrix(int,int);
 		Matrix();
+		Matrix(int,int);
 		
         void getMatrix();
 		void displayMatrix(); 
 		
-        Matrix operator+(Matrix);
-		Matrix operator-(Matrix);
-		Matrix operator*(Matrix);
+        friend Matrix operator+(Matrix, Matrix);
+		friend Matrix operator-(Matrix, Matrix);
+		friend Matrix operator*(Matrix, Matrix);
     
     };
 }

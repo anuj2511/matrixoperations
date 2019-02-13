@@ -5,20 +5,25 @@ int main(){
 
     std::cout<<"Entered Main.\n";
 
-    mayur::Matrix A(4,4);
+    mayur::Matrix A(2,2);
     A.getMatrix();
 
-    mayur::Matrix B(4,4);
+    mayur::Matrix B(2,2);
     B.getMatrix();
 
-    mayur::Matrix C(4,4), D(4,4), E(4,4);
+    mayur::Matrix C, D, E;
     
     C = A + B ;
     D = A - B ;
     E = A * B ;
 
+    std::cout<<"addition: \n";
     C.displayMatrix();
+
+    std::cout<<"\nsubtraction \n";
     D.displayMatrix();
+
+    std::cout<<"\nmultiplication : \n";
     E.displayMatrix();
     
     return 0;
