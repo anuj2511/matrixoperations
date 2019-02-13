@@ -1,3 +1,6 @@
+#ifndef MATRIX_H
+#define MATRIX_H
+
 namespace mayur{
 
     class Matrix{
@@ -17,3 +20,5 @@ namespace mayur{
     
     };
 }
+
+#endif
