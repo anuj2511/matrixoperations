@@ -1,4 +1,4 @@
-# matrixoperations
+# MatrixOperations
 matrix operations library in c++.
 
 Instructions : 
